@@ -2,8 +2,9 @@ export async function generateStaticParams() {
   return [{ slug: "instant-response" }];
 }
 
-export default function HomePage() {
-  return (
+'use client';
+
+export default function FeaturePage() {
     <main style={{
       fontFamily: "Georgia, serif",
       background: "linear-gradient(to bottom, #f8f5f0, #e6e0d4)",
