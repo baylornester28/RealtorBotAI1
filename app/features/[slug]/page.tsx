@@ -1,3 +1,5 @@
+'use client';
+
 export async function generateStaticParams() {
   return [{ slug: "instant-response" }];
 }
