@@ -1,3 +1,7 @@
+export async function generateStaticParams() {
+  return [{ slug: "instant-response" }];
+}
+
 export default function HomePage() {
   return (
     <main style={{
