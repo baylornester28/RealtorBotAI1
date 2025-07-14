@@ -56,6 +56,18 @@ export default function FeaturePage() {
     </main>
   );
 }
+export default function FeaturePage({ params }: { params: { slug: string } }) {
+  const feature = params.slug.replace("-", " ");
+
+  return (
+    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+      <div>
+        <h1>{feature}</h1>
+        <p>This is the RealtorBot AI tool for "{feature}".</p>
+      </div>
+    </main>
+  );
+}
 
 const features = [
   "Instant Lead Response",
